@@ -17,6 +17,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
+
+	<!-- Bootstrapi linkid -->
+	<link href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_url'); ?>/css/bootstrap-grid.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_url'); ?>/css/bootstrap-grid.min.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_url'); ?>/css/bootstrap-reboot.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_url'); ?>/css/bootstrap-reboot.min.css" rel="stylesheet">
+
+
 	<?php wp_head(); ?>
 </head>
 
@@ -26,6 +36,14 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
+		<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
